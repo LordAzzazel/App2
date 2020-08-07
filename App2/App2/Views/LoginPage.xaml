@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behavior="clr-namespace:App2.Models"
+             xmlns:local="clr-namespace:App2.ViewModels"
+             x:Class="App2.Views.LoginPage">
+    <ContentPage.BindingContext>
+        <local:LoginPageViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout x:Name="MasterLayout">
+
+        <StackLayout x:Name="LogoStack" VerticalOptions="FillAndExpand">
+            <Image x:Name="LoginIcon" Source="LoginIcon.png" Margin="0,80,0,0"/>
+        </StackLayout>
+
+        <StackLayout x:Name="LoginEntries" VerticalOptions="StartAndExpand">
+            <StackLayout.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>40,0,40,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>140,150,140,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </StackLayout.Padding>
+
+            <ActivityIndicator x:Name="activitySpinner" Color="Red" IsRunning="True"/>
+
+            <Label x:Name="labelName" Text="Number"/>
+            <Entry  x:Name="entryNumber" Text="{Binding Number}" Keyboard="Telephone" Placeholder="Number">
+                <Entry.Behaviors>
+                    <behavior:MaskedBehavior Mask="+X (XXX) XXX-XX-XX"/>
+                </Entry.Behaviors>
+            </Entry>
+            <Label x:Name="labelPassoword" Text="Password"/>
+            <Entry x:Name="entryPassword" Text="{Binding Password}" Placeholder="Password"/>
+            <Button x:Name="signInButton" Text="Sign in" Command="{Binding connect}"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

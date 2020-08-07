@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2.ViewModels"
+             x:Class="App2.Views.HomePage">
+    <ContentPage.BindingContext>
+        <local:HomePageViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding Items}" x:Name="ContactsListView" HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Tapped="Cell_OnTapped">
+                        <StackLayout>
+                            <Label FontSize="24" Text="{Binding name, StringFormat='  Name: {0:F0}'}"/>
+                            <Label FontSize="24" Text="{Binding birthday, StringFormat='  Birthday: {0:F0}'}"/>
+                            <Label FontSize="24" Text="{Binding phone, StringFormat='  Phone: {0:F0}'}"/>
+                            <Label FontSize="24" Text="{Binding email, StringFormat='  Email: {0:F0}'}"/>
+                            <Label x:Name="lblkey" Text="{Binding access_key}" IsVisible="false"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

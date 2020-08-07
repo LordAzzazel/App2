@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2.ViewModels"
+             x:Class="App2.Views.NewsPage">
+    <ContentPage.BindingContext>
+        <local:NewsViewModel></local:NewsViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding PostsList}" HasUnevenRows="true" ItemTapped="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Tapped="Cell_OnTapped">
+
+                            <Grid Padding="10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"></RowDefinition>
+                                    <RowDefinition Height="*"></RowDefinition>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Image Grid.ColumnSpan="1" HeightRequest="70" WidthRequest="70" Source="{Binding preview_picture, StringFormat='http://cabinets.itmit-studio.ru/{0:F0}'}"></Image>
+                                <Label Grid.Column="1" Text="{Binding head}" FontAttributes="Bold" Grid.Row="0" FontSize="20"></Label>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
