@@ -29,7 +29,7 @@ namespace App2.Views
             var viewCell = (ViewCell)sender;
             if (viewCell.View != null)
             {
-                ;
+                
                 viewCell.View.BackgroundColor = Color.White;
             }
         }

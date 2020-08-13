@@ -30,6 +30,26 @@ namespace App2.ViewModels
                 }
             }
         }
+        /*private Posts selectedPost { get; set; }
+        public Posts SelectedPost
+        {
+            get { return selectedPost; }
+            set
+            {
+                if (selectedPost != value)
+                {
+                    selectedPost = value;
+                    HandleSelectedItem();
+                    NotifyPropertyChanged();
+                }
+            }
+
+        }
+        private void HandleSelectedItem()
+        {
+            Page page = new Page();
+            page.DisplayAlert("Selected item", "Name: " + SelectedPost.head, "Ok");
+        }*/
 
         public event PropertyChangedEventHandler PropertyChanged;
 

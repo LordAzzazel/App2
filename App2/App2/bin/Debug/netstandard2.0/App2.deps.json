@@ -10,6 +10,7 @@
       "App2/1.0.0": {
         "dependencies": {
           "AutoMapper": "10.0.0",
+          "FreshMvvm": "3.0.0",
           "NETStandard.Library": "2.0.3",
           "Newtonsoft.Json": "12.0.3",
           "Realm": "4.3.0",
@@ -33,6 +34,22 @@
         }
       },
       "Fody/6.1.0": {},
+      "FreshMvvm/3.0.0": {
+        "dependencies": {
+          "System.Reactive": "4.0.0",
+          "Xamarin.Forms": "4.6.0.1141"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FreshIOC.dll": {
+            "assemblyVersion": "1.0.7010.22624",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard2.0/FreshMvvm.dll": {
+            "assemblyVersion": "1.0.7010.22624",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.CSharp.dll": {
@@ -283,6 +300,17 @@
           }
         }
       },
+      "System.Reactive/4.0.0": {
+        "dependencies": {
+          "System.Runtime.InteropServices.WindowsRuntime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reactive.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.398"
+          }
+        }
+      },
       "System.Reflection/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -382,6 +410,17 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+        "dependencies": {
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Runtime.InteropServices.WindowsRuntime.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.6.24705.1"
+          }
+        }
+      },
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
@@ -456,6 +495,13 @@
       "sha512": "sha512-64W16axa5vtBF3J5UqR5cNNGcJ+tRKa7owYNbzIWWx2mjXbmCqfpjWLEGTAL0YEe8YE4QMde+WN7w6IY3tspYQ==",
       "path": "fody/6.1.0",
       "hashPath": "fody.6.1.0.nupkg.sha512"
+    },
+    "FreshMvvm/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/XDZFT3hQP7Vbz44BJYkeWgPIDUenA2KHxROV95syRcARH/5r//Upx+Z6MVXcAioW9KvTOivrBvU+Q47Wy7Arg==",
+      "path": "freshmvvm/3.0.0",
+      "hashPath": "freshmvvm.3.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
@@ -625,6 +671,13 @@
       "path": "system.objectmodel/4.3.0",
       "hashPath": "system.objectmodel.4.3.0.nupkg.sha512"
     },
+    "System.Reactive/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yaVAxT2Yl28p9+DupGwj2oPbIOYZUQimOQ+n7N7vML2oofIRj9BmcfD7DHc6FLrNah65EigOgG6U9VnwWEyz5g==",
+      "path": "system.reactive/4.0.0",
+      "hashPath": "system.reactive.4.0.0.nupkg.sha512"
+    },
     "System.Reflection/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -701,6 +754,13 @@
       "sha512": "sha512-guW0uK0fn5fcJJ1tJVXYd7/1h5F+pea1r7FLSOz/f8vPEqbR2ZAknuRDvTQ8PzAilDveOxNjSfr0CHfIQfFk8g==",
       "path": "system.runtime.extensions/4.3.0",
       "hashPath": "system.runtime.extensions.4.3.0.nupkg.sha512"
+    },
+    "System.Runtime.InteropServices.WindowsRuntime/4.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-J4GUi3xZQLUBasNwZnjrffN8i5wpHrBtZoLG+OhRyGo/+YunMRWWtwoMDlUAIdmX0uRfpHIBDSV6zyr3yf00TA==",
+      "path": "system.runtime.interopservices.windowsruntime/4.3.0",
+      "hashPath": "system.runtime.interopservices.windowsruntime.4.3.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",

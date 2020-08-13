@@ -508,3 +508,9 @@ C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\S
 C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\System.Runtime.Extensions.dll
 C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\System.Threading.dll
+C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\FreshIOC.dll
+C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\FreshIOC.pdb
+C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\FreshMvvm.dll
+C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\FreshMvvm.pdb
+C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\System.Reactive.dll
+C:\Users\lebed\source\repos\App2\App2\App2.Android\obj\Debug\90\android\assets\System.Runtime.InteropServices.WindowsRuntime.dll
